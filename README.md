@@ -18,7 +18,7 @@
 ---
 
 ## 3. 프로젝트 전체 구조도 (Architecture)
-*(여기에 전체 구조도 이미지 파일을 드래그&드롭 하세요)*
+![전체 구조도]<img width="1067" height="616" alt="architecture" src="https://github.com/user-attachments/assets/4ade1e55-7040-474c-a821-44a343bf6630" />
 * **Frontend:** React -> **Backend:** Node.js -> **DB:** MongoDB
 
 ---
