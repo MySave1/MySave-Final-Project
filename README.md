@@ -18,7 +18,7 @@
 ---
 
 ## 3. 프로젝트 전체 구조도 (Architecture)
-[전체 구조도]<img width="1067" height="616" alt="architecture" src="https://github.com/user-attachments/assets/4ade1e55-7040-474c-a821-44a343bf6630" />
+[전체 구조도]<img width="1043" height="582" alt="architecture" src="https://github.com/user-attachments/assets/2d1a2d61-eaf6-4ae0-879d-2b051991c6fc" />
 * **Frontend:** React -> **Backend:** Node.js -> **DB:** MongoDB
 
 ---
