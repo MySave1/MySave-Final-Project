@@ -104,14 +104,16 @@
   npm install
   npm run dev
 
-<div id="#screenshots"></div>
+
+
+<div id="screenshots"></div>
 
 
 ## 6. 화면 구성 및 UI 스크린샷 (Screenshots)
 
 프로젝트의 페이지별 UI 스크린샷은 아래 경로에 정리되어 있습니다.
 
-- **경로:** `/images/screenshot/`
+- **경로:** `/images/screenshots/`
 
 
 
