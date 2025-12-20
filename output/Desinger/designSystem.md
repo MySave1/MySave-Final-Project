@@ -67,7 +67,7 @@
 ### 3-4) 상세 화면 : 효율적인 정보 가공
 * **Split View**: 원문 열람과 동시에 메모/요약을 참고할 수 있는 화면 분할 레이아웃을 적용했습니다.
 * 원문의 맥락을 유지하며 정보를 가공할 수 있는 멀티태스킹 최적화 환경입니다.
-<img width="2203" height="2039" alt="북마크 상세 페이지" src="https://github.com/user-attachments/assets/90256cca-5d90-4699-a9bf-a65866eb5f5e" />
+<img width="2203" height="2039" alt="북마크 상세 페이지" src="https://github.com/user-attachments/assets/a32ff6aa-7fef-46c4-a368-a9db25bc2923" />
 
 
 ### 3-5) 리마인더 : 심리적 압박을 줄이는 가이드
