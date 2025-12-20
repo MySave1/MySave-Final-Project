@@ -85,3 +85,14 @@
 결과적으로 완벽한 마무리는 아니었지만, 앞으로 개발을 계속 해보고 싶다는 마음이 더 확실해졌고, 같은 문제를 다시 마주하더라도 이번보다 훨씬 잘 해결할 수 있을 것 같습니다. 무엇보다 같이 고민해주고 응원해준 팀원들 덕분에 끝까지 포기하지 않고 완성할 수 있었습니다. 이번 경험은 저에게 정말 의미 있었습니다.
 
 좋은 경험할 수 있게 해주신 **차성원 강사님**께도 감사드립니다!
+
+<img width="358" height="546" alt="image" src="https://github.com/user-attachments/assets/20903d23-7a05-40d1-b560-c455d0ed279c" />
+<img width="369" height="604" alt="image" src="https://github.com/user-attachments/assets/08b26458-4c99-47ab-a23f-929940c13c4d" />
+<img width="357" height="368" alt="image" src="https://github.com/user-attachments/assets/fc78182d-8b8b-42ff-9c14-23d0d11861d3" />
+<img width="360" height="290" alt="image" src="https://github.com/user-attachments/assets/b7612755-f0cf-451c-8c09-db7a552a0d02" />
+<img width="509" height="288" alt="image" src="https://github.com/user-attachments/assets/8e9784e5-06ec-4b2a-9be3-d5f39c28c7b5" />
+
+
+
+
+
