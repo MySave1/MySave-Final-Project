@@ -9,7 +9,7 @@
    - [전체 시스템 아키텍처](#4-1-전체-시스템-아키텍처-system-architecture)
    - [기술 스택](#4-2-기술-스택-tech-stack)
 5. [실행 방법 및 환경 정보](#5-실행-방법-및-환경-정보-environment)
-6. [화면 구성 및 UI 스크린샷](#6-화면-구성-및-ui-스크린샷-ui-screenshots)
+
 
 ---
 
@@ -35,7 +35,7 @@
 
 ---
 
-## 2. 📁 프로젝트 저장소 링크 (Repositories)
+## 2. 프로젝트 저장소 링크 (Repositories)
 이 프로젝트는 Frontend와 Backend 저장소가 분리되어 관리됩니다. 소스코드는 아래 링크에서 확인하실 수 있습니다.
 
 | 파트 | 저장소 링크 | 비고 |
@@ -45,17 +45,18 @@
 
 ---
 
-## 3. 🔗 배포 주소 (Deployment)
+## 3. 배포 주소 (Deployment)
 * **Frontend:** [배포된 URL 입력]
 * **Backend API:** (http://13.60.25.65:8080)
 * **Swagger/API Docs:** (http://13.60.25.65:8080/swagger-ui/index.html)
 
 ---
 
-## 4. 🛠 시스템 구조 및 기술 스택 (Architecture & Tech Stack)
+## 4. 시스템 구조 및 기술 스택 (Architecture & Tech Stack)
 
 ### 4-1. 전체 시스템 아키텍처 (System Architecture)
-![architecture](https://github.com/user-attachments/assets/04883c36-d47e-412d-a543-93dc95d4992b)
+[전체구조도]<img width="1043" height="582" alt="architecture" src="https://github.com/user-attachments/assets/04883c36-d47e-412d-a543-93dc95d4992b" />
+
 
 본 서비스는 **Chrome Extension**을 통해 데이터를 수집하고, **Web Dashboard**에서 데이터를 시각화 및 관리하는 구조로 동작합니다.
 
@@ -76,7 +77,7 @@
 
 ---
 
-## 5. 💻 실행 방법 및 환경 정보 (Environment)
+## 5. 실행 방법 및 환경 정보 (Environment)
 ### 🔹 Frontend 환경
 * **Node Version:** v18.xx.x
 * **Framework:** React v18
