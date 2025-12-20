@@ -21,4 +21,5 @@
 ## 2. 최종 UI 디자인 (Final UI Design)
 와이어프레임을 구체화하여 완성된 최종 UI 화면 구성도입니다. 사용자의 행동 흐름(User Flow)에 따라 화면을 설계했습니다.
 
-[최종 UI 시스템 디자인]<img width="1006" height="725" alt="각 화면별 상세" src="https://github.com/user-attachments/assets/dcb4668d-76c5-49e1-b1ea-7508c34c181e" />
+[최종 UI 시스템 디자인]<img width="1077" height="764" alt="image" src="https://github.com/user-attachments/assets/79b2f580-001c-4abc-9227-3f64f8f79643" />
+
