@@ -173,8 +173,8 @@ MySave_FE-feature-FE/
 
 #### 2) 북마크 목록 (`bookmark/bookmark.html`)
 
-<img src="images/screenshots/02_북마크목록_전체.png?raw=1" width="900" alt="02 북마크목록 전체" />
-<img src="images/screenshots/03_북마크목록_즐겨찾기.png?raw=1" width="900" alt="03 북마크목록 즐겨찾기" />
+<img src="https://github.com/MySave1/MySave-Final-Project/blob/main/images/screenshots/02_북마크목록_전체.png?raw=1" width="900" alt="02 북마크목록 전체" />
+<img src="https://github.com/MySave1/MySave-Final-Project/blob/main/images/screenshots/03_북마크목록_즐겨찾기.png?raw=1" width="900" alt="03 북마크목록 즐겨찾기" />
 
 - 저장한 북마크 목록을 최신순으로 표시합니다.
 - 전체 북마크를 한 곳에서 모아볼 수 있습니다.
