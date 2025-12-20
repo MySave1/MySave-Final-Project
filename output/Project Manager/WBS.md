@@ -1,6 +1,6 @@
 # 프로젝트 일정 (WBS)
 
-![프로젝트 전체 일정표]
+[프로젝트 전체 일정표]
 
 <img width="701" height="817" alt="일정표1" src="https://github.com/user-attachments/assets/637dcc81-b04e-4f3d-9c30-b47e1076f2fc" />
 <img width="681" height="695" alt="일정표2" src="https://github.com/user-attachments/assets/65e5a490-8aeb-4a82-a260-97d3b16819b1" />
