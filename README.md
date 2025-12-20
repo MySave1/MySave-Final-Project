@@ -66,7 +66,7 @@
 <div id="system-arch"></div>
 
 ### 4-1. 전체 시스템 아키텍처 (System Architecture)
-<img width="10113" height="5252" alt="architecture" src="https://github.com/user-attachments/assets/e3c77012-32dd-416f-98dd-e9d8cbb5f682" />
+<img width="10113" height="5252" alt="architecture" src="https://github.com/user-attachments/assets/5b20f95c-2e36-466c-97a3-dd801f85a1ff" />
 
 
 본 서비스는 **Chrome Extension**을 통해 데이터를 수집하고, **Web Dashboard**에서 데이터를 시각화 및 관리하는 구조로 동작합니다.
