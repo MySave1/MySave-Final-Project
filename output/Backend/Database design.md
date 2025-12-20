@@ -3,78 +3,164 @@
 <img width="978" height="623" alt="image" src="https://github.com/user-attachments/assets/595254d0-9033-4338-a483-9720f569707f" />
 
 
-## 1. ER Diagram (Entity-Relationship Diagram)
+# 🗄️ Database DDL Script
 
-```mermaid
-erDiagram
-    users ||--o{ bookmarks : "Creates (1:N)"
-    users ||--o{ tags : "Manages (1:N)"
-    users ||--o{ reminders : "Sets (1:N)"
-    
-    bookmarks ||--o{ bookmark_tags : "Has (1:N)"
-    tags ||--o{ bookmark_tags : "Tagged in (1:N)"
-    
-    bookmarks |o--o{ reminders : "Target (1:N)"
-    bookmarks ||--|| bookmark_ai_summaries : "Summarized (1:1)"
+전체 데이터베이스 스키마 생성을 위한 SQL 코드입니다.
 
-    users {
-        bigint id PK
-        varchar oauth_provider "NN, Default: 'kakao'"
-        varchar oauth_id "NN"
-        varchar email
-        varchar name
-        text profile_image
-        text refresh_token
-        timestamptz last_login_at
-        timestamptz created_at "Default: NOW()"
-        timestamptz updated_at
-    }
+```sql
+-- =========================================
+-- DROP old tables if needed
+-- =========================================
+DROP TABLE IF EXISTS bookmark_ai_summaries CASCADE;
+DROP TABLE IF EXISTS reminders CASCADE;
+DROP TABLE IF EXISTS bookmark_tags CASCADE;
+DROP TABLE IF EXISTS tags CASCADE;
+DROP TABLE IF EXISTS bookmarks CASCADE;
+DROP TABLE IF EXISTS users CASCADE;
 
-    bookmarks {
-        bigint id PK
-        bigint user_id FK "NN"
-        text url "NN"
-        text title
-        text description
-        text favicon_url
-        varchar source "NN, Default: 'extension'"
-        boolean is_archived "NN, Default: false"
-        int visit_count "NN, Default: 0"
-        timestamptz last_visited_at
-        timestamptz created_at "Default: NOW()"
-        timestamptz updated_at
-    }
 
-    tags {
-        bigint id PK
-        bigint user_id FK "NN"
-        varchar name "NN"
-        timestamptz created_at "Default: NOW()"
-    }
+-- =========================================
+-- 1. users (카카오 로그인 반영)
+-- =========================================
+CREATE TABLE users (
+    id              BIGSERIAL PRIMARY KEY,
 
-    bookmark_tags {
-        bigint bookmark_id PK, FK "NN"
-        bigint tag_id PK, FK "NN"
-    }
+    -- OAuth Provider 정보
+    oauth_provider  VARCHAR(30) NOT NULL DEFAULT 'kakao',
+    oauth_id        VARCHAR(100) NOT NULL,    -- 카카오의 사용자 ID (문자열 저장)
 
-    reminders {
-        bigint id PK
-        bigint user_id FK "NN"
-        bigint bookmark_id FK
-        timestamptz remind_at "NN"
-        varchar status "NN, Default: 'scheduled'"
-        timestamptz created_at "Default: NOW()"
-        timestamptz completed_at
-    }
+    email           VARCHAR(255),
+    name            VARCHAR(100),
 
-    bookmark_ai_summaries {
-        bigint id PK
-        bigint bookmark_id FK, UQ "NN"
-        text summary_short
-        text summary_full
-        varchar model
-        timestamptz created_at "Default: NOW()"
-    }
+    profile_image   TEXT,
+    refresh_token   TEXT,
+
+    last_login_at   TIMESTAMPTZ,
+    created_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    updated_at      TIMESTAMPTZ,
+
+    CONSTRAINT uq_oauth UNIQUE (oauth_provider, oauth_id)
+);
+
+CREATE INDEX idx_users_oauth ON users (oauth_provider, oauth_id);
+CREATE INDEX idx_users_email ON users (email);
+
+
+-- =========================================
+-- 2. bookmarks
+-- =========================================
+CREATE TABLE bookmarks (
+    id              BIGSERIAL PRIMARY KEY,
+    user_id         BIGINT NOT NULL,
+    url             TEXT NOT NULL,
+    title           TEXT,
+    description     TEXT,
+    favicon_url     TEXT,
+
+    source          VARCHAR(30) NOT NULL DEFAULT 'extension',
+    is_archived     BOOLEAN NOT NULL DEFAULT FALSE,
+    visit_count     INT NOT NULL DEFAULT 0,
+    last_visited_at TIMESTAMPTZ,
+
+    created_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    updated_at      TIMESTAMPTZ,
+
+    CONSTRAINT fk_bookmarks_user
+        FOREIGN KEY (user_id) REFERENCES users (id)
+        ON DELETE CASCADE,
+
+    CONSTRAINT chk_bookmarks_source CHECK (source IN ('extension', 'web', 'mobile'))
+);
+
+CREATE INDEX idx_bookmarks_user_created
+    ON bookmarks (user_id, created_at DESC);
+
+
+-- =========================================
+-- 3. tags
+-- =========================================
+CREATE TABLE tags (
+    id          BIGSERIAL PRIMARY KEY,
+    user_id     BIGINT NOT NULL,
+    name        VARCHAR(50) NOT NULL,
+    created_at  TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+
+    CONSTRAINT fk_tags_user
+        FOREIGN KEY (user_id) REFERENCES users (id)
+        ON DELETE CASCADE,
+
+    CONSTRAINT uq_tags_user_name UNIQUE (user_id, name)
+);
+
+CREATE INDEX idx_tags_user ON tags (user_id);
+
+
+-- =========================================
+-- 4. bookmark_tags (M:N)
+-- =========================================
+CREATE TABLE bookmark_tags (
+    bookmark_id BIGINT NOT NULL,
+    tag_id      BIGINT NOT NULL,
+    PRIMARY KEY (bookmark_id, tag_id),
+
+    CONSTRAINT fk_bookmark_tags_bookmark
+        FOREIGN KEY (bookmark_id) REFERENCES bookmarks (id)
+        ON DELETE CASCADE,
+
+    CONSTRAINT fk_bookmark_tags_tag
+        FOREIGN KEY (tag_id) REFERENCES tags (id)
+        ON DELETE CASCADE
+);
+
+
+-- =========================================
+-- 5. reminders
+-- =========================================
+CREATE TABLE reminders (
+    id              BIGSERIAL PRIMARY KEY,
+    user_id         BIGINT NOT NULL,
+    bookmark_id     BIGINT,
+
+    remind_at       TIMESTAMPTZ NOT NULL,
+    status          VARCHAR(20) NOT NULL DEFAULT 'scheduled',
+
+    created_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    completed_at    TIMESTAMPTZ,
+
+    CONSTRAINT fk_reminders_user
+        FOREIGN KEY (user_id) REFERENCES users (id)
+        ON DELETE CASCADE,
+
+    CONSTRAINT fk_reminders_bookmark
+        FOREIGN KEY (bookmark_id) REFERENCES bookmarks (id)
+        ON DELETE SET NULL,
+
+    CONSTRAINT chk_reminders_status
+        CHECK (status IN ('scheduled', 'sent', 'canceled', 'failed'))
+);
+
+CREATE INDEX idx_reminders_user_at ON reminders (user_id, remind_at);
+
+
+-- =========================================
+-- 6. bookmark_ai_summaries
+-- =========================================
+CREATE TABLE bookmark_ai_summaries (
+    id              BIGSERIAL PRIMARY KEY,
+    bookmark_id     BIGINT NOT NULL UNIQUE,
+
+    summary_short   TEXT,
+    summary_full    TEXT,
+    model           VARCHAR(50),
+
+    created_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+
+    CONSTRAINT fk_ai_summary_bookmark
+        FOREIGN KEY (bookmark_id) REFERENCES bookmarks (id)
+        ON DELETE CASCADE
+);
+
+CREATE INDEX idx_ai_summary_bookmark ON bookmark_ai_summaries (bookmark_id);
 ```
 
 ---
