@@ -2,16 +2,18 @@
 
 ## 📚 목차 (Table of Contents)
 
-1. [프로젝트 개요](#-프로젝트-개요-project-overview)
-2. [프로젝트 저장소 링크](#1-프로젝트-저장소-링크-repositories)
-3. [배포 주소](#2-배포-주소-deployment)
-4. [시스템 구조 및 기술 스택](#3-시스템-구조-및-기술-스택-architecture--tech-stack)
-   - [전체 시스템 아키텍처](#3-1-전체-시스템-아키텍처-system-architecture)
-   - [기술 스택](#3-2-기술-스택-tech-stack)
-5. [실행 방법 및 환경 정보](#4-실행-방법-및-환경-정보-environment)
-6. [화면 구성 및 UI 스크린샷](#5-화면-구성-및-ui-스크린샷-ui-screenshots)
+1. [프로젝트 개요](#1-프로젝트-개요-project-overview)
+2. [프로젝트 저장소 링크](#2-프로젝트-저장소-링크-repositories)
+3. [배포 주소](#3-배포-주소-deployment)
+4. [시스템 구조 및 기술 스택](#4-시스템-구조-및-기술-스택-architecture--tech-stack)
+   - [전체 시스템 아키텍처](#4-1-전체-시스템-아키텍처-system-architecture)
+   - [기술 스택](#4-2-기술-스택-tech-stack)
+5. [실행 방법 및 환경 정보](#5-실행-방법-및-환경-정보-environment)
+6. [화면 구성 및 UI 스크린샷](#6-화면-구성-및-ui-스크린샷-ui-screenshots)
 
-## 📌 프로젝트 개요 (Project Overview)
+---
+
+## 1. 📌 프로젝트 개요 (Project Overview)
 
 ### 🧩 한 줄 소개
 > **"MySave는 다시 읽지 않는 북마크 문제를 해결하기 위한, 리마인드 기반 개인화 북마크 관리 서비스입니다."**
@@ -32,7 +34,8 @@
 * **📊 웹 대시보드:** 읽음/안읽음 상태 관리 및 시각화 된 대시보드 제공
 
 ---
-## 1. 프로젝트 저장소 링크 (Repositories)
+
+## 2. 📁 프로젝트 저장소 링크 (Repositories)
 이 프로젝트는 Frontend와 Backend 저장소가 분리되어 관리됩니다. 소스코드는 아래 링크에서 확인하실 수 있습니다.
 
 | 파트 | 저장소 링크 | 비고 |
@@ -42,18 +45,17 @@
 
 ---
 
-## 2. 배포 주소 (Deployment)
+## 3. 🔗 배포 주소 (Deployment)
 * **Frontend:** [배포된 URL 입력]
 * **Backend API:** (http://13.60.25.65:8080)
 * **Swagger/API Docs:** (http://13.60.25.65:8080/swagger-ui/index.html)
 
 ---
 
-## 3. 시스템 구조 및 기술 스택 (Architecture & Tech Stack)
+## 4. 🛠 시스템 구조 및 기술 스택 (Architecture & Tech Stack)
 
-### 3-1. 전체 시스템 아키텍처 (System Architecture)
-[전체구조도]<img width="1043" height="582" alt="architecture" src="https://github.com/user-attachments/assets/04883c36-d47e-412d-a543-93dc95d4992b" />
-
+### 4-1. 전체 시스템 아키텍처 (System Architecture)
+![architecture](https://github.com/user-attachments/assets/04883c36-d47e-412d-a543-93dc95d4992b)
 
 본 서비스는 **Chrome Extension**을 통해 데이터를 수집하고, **Web Dashboard**에서 데이터를 시각화 및 관리하는 구조로 동작합니다.
 
@@ -62,7 +64,7 @@
 
 <br>
 
-### 3-2. 기술 스택 (Tech Stack)
+### 4-2. 기술 스택 (Tech Stack)
 
 | 구분 | 기술 (Technology) | 설명 (Description) |
 | :--- | :--- | :--- |
@@ -74,7 +76,7 @@
 
 ---
 
-## 4. 실행 방법 및 환경 정보 (Environment)
+## 5. 💻 실행 방법 및 환경 정보 (Environment)
 ### 🔹 Frontend 환경
 * **Node Version:** v18.xx.x
 * **Framework:** React v18
@@ -83,16 +85,3 @@
   git clone [https://github.com/MySave1/MySave_FE.git](https://github.com/MySave1/MySave_FE.git)
   npm install
   npm run dev
-
-## 5. 화면 구성 및 UI 스크린샷 (UI Screenshots)
-
-본 프로젝트의 **페이지별 화면 스크린샷은 `/images` 폴더에 정리되어 있습니다.**
-
-- Chrome Extension 화면
-- 웹 대시보드 (메인)
-- 북마크 목록 / 상세 페이지
-- 태그 관리 화면
-- 리마인드 화면
-- 설정 페이지 등
-
-👉 각 화면의 실제 UI 흐름과 기능 구현 결과를 확인할 수 있습니다.
