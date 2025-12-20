@@ -33,8 +33,8 @@
 
 ## 2. 배포 주소 (Deployment)
 * **Frontend:** [배포된 URL 입력]
-* **Backend API:** [서버 URL 입력]
-* **Swagger/API Docs:** [API 문서 URL 입력]
+* **Backend API:** (http://13.60.25.65:8080)
+* **Swagger/API Docs:** (http://13.60.25.65:8080/swagger-ui/index.html)
 
 ---
 
