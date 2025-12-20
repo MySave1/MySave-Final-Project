@@ -10,6 +10,7 @@
    - [기술 스택](#tech-stack)
 5. [실행 방법 및 환경 정보](#environment)
 6. [화면 구성 및 UI 스크린샷](#screenshots)
+7. [현재 상황](#status)
 
 ---
 
