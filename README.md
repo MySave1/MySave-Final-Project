@@ -72,3 +72,16 @@
   git clone [https://github.com/MySave1/MySave_FE.git](https://github.com/MySave1/MySave_FE.git)
   npm install
   npm run dev
+
+## 5. 화면 구성 및 UI 스크린샷 (UI Screenshots)
+
+본 프로젝트의 **페이지별 화면 스크린샷은 `/images` 폴더에 정리되어 있습니다.**
+
+- Chrome Extension 화면
+- 웹 대시보드 (메인)
+- 북마크 목록 / 상세 페이지
+- 태그 관리 화면
+- 리마인드 화면
+- 설정 페이지 등
+
+👉 각 화면의 실제 UI 흐름과 기능 구현 결과를 확인할 수 있습니다.
