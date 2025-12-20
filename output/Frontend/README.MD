@@ -146,7 +146,12 @@ MySave_FE-feature-FE/
 
 #### 1) 대시보드 (`dashboard/dashboard.html`)
 
-<img src="images/screenshots/01_대시보드.png" width="900" alt="01 대시보드" />
+<img
+  src="https://github.com/MySave1/MySave-Final-Project/blob/main/images/screenshots/01_%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C.png?raw=1"
+  width="700"
+  alt="01 대시보드"
+/>
+
 
 - 통계 카드
   - 오늘 저장한 글
