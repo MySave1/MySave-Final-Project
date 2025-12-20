@@ -52,7 +52,7 @@
 <div id="deployment"></div>
 
 ## 3. 배포 주소 (Deployment)
-* **Frontend:** [배포된 URL 입력]
+* **Frontend:** (https://my-save-fe.vercel.app/)
 * **Backend API:** (http://13.60.25.65:8080)
 * **Swagger/API Docs:** (http://13.60.25.65:8080/swagger-ui/index.html)
 
