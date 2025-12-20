@@ -3,4 +3,4 @@
 
 **🔗 접속 주소:** [http://3.35.120.45:8080/swagger-ui/index.html](http://13.60.25.65:8080/swagger-ui/index.html)
 
-![MySave API Swagger UI](swagger_capture.png)
+<img width="963" height="718" alt="swagger" src="https://github.com/user-attachments/assets/d13ee64c-4a29-4a63-94ca-991068ac5442" />
