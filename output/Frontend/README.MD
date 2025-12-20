@@ -188,7 +188,7 @@ MySave_FE-feature-FE/
 
 #### 3) 북마크 상세 (`bookmarkContent/bookmarkContent.html`)
 
-<img src="images/screenshots/04_북마크상세.png?raw=1" width="900" alt="04 북마크 상세" />
+<img src="https://github.com/MySave1/MySave-Final-Project/blob/main/images/screenshots/04_북마크상세.png?raw=1" width="900" alt="04 북마크 상세" />
 
 - 수정/상태 변경
   - 수정하기 버튼으로 제목/텍스트 수정이 가능합니다.
@@ -208,7 +208,7 @@ MySave_FE-feature-FE/
 
 #### 4) 검색(공통)
 
-<img src="images/screenshots/05_북마크검색.png?raw=1" width="900" alt="05 북마크 검색" />
+<img src="https://github.com/MySave1/MySave-Final-Project/blob/main/images/screenshots/05_북마크검색.png?raw=1" width="900" alt="05 북마크 검색" />
 
 - 대시보드/북마크 목록 상단에서 검색이 가능합니다.
 - “저장한 글, 태그 검색”을 통해 제목 또는 태그에 검색어가 포함된 북마크 목록을 반환합니다.
@@ -217,7 +217,7 @@ MySave_FE-feature-FE/
 
 #### 5) 태그 (`tag/tag.html`)
 
-<img src="images/screenshots/06_태그.png?raw=1" width="900" alt="06 태그" />
+<img src="https://github.com/MySave1/MySave-Final-Project/blob/main/images/screenshots/06_태그.png?raw=1" width="900" alt="06 태그" />
 
 - 태그 추가 시 영문은 대문자로 통일합니다.
 - 기존 태그와 중복되면 경고창(“이미 존재하는 태그입니다”)을 띄웁니다.
@@ -230,7 +230,7 @@ MySave_FE-feature-FE/
 
 #### 6) 리마인더 (`reminder/reminder.html`)
 
-<img src="images/screenshots/07_리마인드.png?raw=1" width="900" alt="07 리마인드" />
+<img src="https://github.com/MySave1/MySave-Final-Project/blob/main/images/screenshots/07_리마인드.png?raw=1" width="900" alt="07 리마인드" />
 
 - 상단 배너 문구가 상태에 따라 달라집니다.
   - 오늘 마감 글이 없을 때: “여유로운 하루네요! …”
@@ -247,7 +247,7 @@ MySave_FE-feature-FE/
 
 #### 7) 설정 (`setting/setting.html`)
 
-<img src="images/screenshots/08_설정.png?raw=1" width="900" alt="08 설정" />
+<img src="https://github.com/MySave1/MySave-Final-Project/blob/main/images/screenshots/08_설정.png?raw=1" width="900" alt="08 설정" />
 
 - AI 설정, 환경 설정(알림/디자인), 데이터 관리 메뉴로 구성했습니다.
 - 일부 기능은 현재 미구현 상태입니다. (예: 데이터 관리, 프로필 이미지 수정)
@@ -256,7 +256,7 @@ MySave_FE-feature-FE/
 
 #### 8) 대시보드 - 북마크 직접 추가(모달)
 
-<img src="images/screenshots/09_대시보드_북마크직접추가.png?raw=1" width="900" alt="09 대시보드 북마크 직접 추가" />
+<img src="https://github.com/MySave1/MySave-Final-Project/blob/main/images/screenshots/09_대시보드_북마크직접추가.png?raw=1" width="900" alt="09 대시보드 북마크 직접 추가" />
 
 - 모달에서 제목(필수), 텍스트, 메모, 태그, 리마인더를 설정하고 저장할 수 있습니다.
 
@@ -264,9 +264,9 @@ MySave_FE-feature-FE/
 
 #### 9) 확장 프로그램 (`extension/extension.html`)
 
-<img src="images/screenshots/10_확장프로그램_대표이미지존재x.png?raw=1" width="900" alt="10 확장프로그램 대표이미지 없음" />
-<img src="images/screenshots/11_확장프로그램_대표이미지존재.png?raw=1" width="900" alt="11 확장프로그램 대표이미지 있음" />
-<img src="images/screenshots/12_확장프로그램_리마인더설정.png?raw=1" width="900" alt="12 확장프로그램 리마인더 설정" />
+<img src="https://github.com/MySave1/MySave-Final-Project/blob/main/images/screenshots/10_확장프로그램_대표이미지존재x.png?raw=1" width="900" alt="10 확장프로그램 대표이미지 없음" />
+<img src="https://github.com/MySave1/MySave-Final-Project/blob/main/images/screenshots/11_확장프로그램_대표이미지존재.png?raw=1" width="900" alt="11 확장프로그램 대표이미지 있음" />
+<img src="https://github.com/MySave1/MySave-Final-Project/blob/main/images/screenshots/12_확장프로그램_리마인더설정.png?raw=1" width="900" alt="12 확장프로그램 리마인더 설정" />
 
 - 원클릭 저장을 위한 UI를 제공합니다.
 - 현재 페이지 URL을 가져와 저장 흐름을 시작합니다.
