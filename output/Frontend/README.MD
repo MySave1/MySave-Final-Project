@@ -266,7 +266,7 @@ MySave_FE-feature-FE/
 
 <img src="https://github.com/MySave1/MySave-Final-Project/blob/main/images/screenshots/10_확장프로그램_대표이미지존재x.png?raw=1" width="900" alt="10 확장프로그램 대표이미지 없음" />
 <img src="https://github.com/MySave1/MySave-Final-Project/blob/main/images/screenshots/11_확장프로그램_대표이미지존재.png?raw=1" width="900" alt="11 확장프로그램 대표이미지 있음" />
-<img src="https://github.com/MySave1/MySave-Final-Project/blob/main/images/screenshots/12_확장프로그램_리마인더설정.png?raw=1" width="900" alt="12 확장프로그램 리마인더 설정" />
+<img src="https://github.com/MySave1/MySave-Final-Project/blob/main/images/screenshots/12_확장프로그램_리마인더설정.png?raw=1" width="400" alt="12 확장프로그램 리마인더 설정" />
 
 - 원클릭 저장을 위한 UI를 제공합니다.
 - 현재 페이지 URL을 가져와 저장 흐름을 시작합니다.
@@ -276,7 +276,7 @@ MySave_FE-feature-FE/
 
 #### 10) 초기 화면 (`index.html`)
 
-<img src="images/screenshots/index.html_초기화면.png?raw=1" width="900" alt="index 초기화면" />
+<img src="https://github.com/MySave1/MySave-Final-Project/blob/main/images/screenshots/index.html_초기화면.png?raw=1" width="900" alt="index 초기화면" />
 
 - 서비스 진입 및 기본 탐색을 위한 초기 화면입니다.
 
