@@ -101,3 +101,13 @@
   git clone [https://github.com/MySave1/MySave_FE.git](https://github.com/MySave1/MySave_FE.git)
   npm install
   npm run dev
+
+<div id="status"></div>
+
+## 7. 프로젝트 현재 진행 상황
+
+- **서버 배포 완료**: 백엔드 서버는 정상적으로 배포 및 운영 중
+- **연동 이슈 진행 중**: 프론트엔드와 **카카오 로그인(OAuth)** 연동 과정에서 오류 발생
+
+- 백엔드 및 프론트엔드 서버 배포는 완료되었으며,
+- 현재 OAuth 기반 카카오 로그인 연동 과정에서 발생한 환경/설정 이슈를 해결 중
