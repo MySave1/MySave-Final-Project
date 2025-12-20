@@ -2,16 +2,18 @@
 
 ## 📚 목차 (Table of Contents)
 
-1. [프로젝트 개요](#1-프로젝트-개요-project-overview)
-2. [프로젝트 저장소 링크](#2-프로젝트-저장소-링크-repositories)
-3. [배포 주소](#3-배포-주소-deployment)
-4. [시스템 구조 및 기술 스택](#4-시스템-구조-및-기술-스택-architecture--tech-stack)
-   - [전체 시스템 아키텍처](#4-1-전체-시스템-아키텍처-system-architecture)
-   - [기술 스택](#4-2-기술-스택-tech-stack)
-5. [실행 방법 및 환경 정보](#5-실행-방법-및-환경-정보-environment)
-
+1. [프로젝트 개요](#overview)
+2. [프로젝트 저장소 링크](#repositories)
+3. [배포 주소](#deployment)
+4. [시스템 구조 및 기술 스택](#architecture)
+   - [전체 시스템 아키텍처](#system-arch)
+   - [기술 스택](#tech-stack)
+5. [실행 방법 및 환경 정보](#environment)
+6. [화면 구성 및 UI 스크린샷](#screenshots)
 
 ---
+
+<div id="overview"></div>
 
 ## 1. 📌 프로젝트 개요 (Project Overview)
 
@@ -35,6 +37,8 @@
 
 ---
 
+<div id="repositories"></div>
+
 ## 2. 프로젝트 저장소 링크 (Repositories)
 이 프로젝트는 Frontend와 Backend 저장소가 분리되어 관리됩니다. 소스코드는 아래 링크에서 확인하실 수 있습니다.
 
@@ -45,6 +49,8 @@
 
 ---
 
+<div id="deployment"></div>
+
 ## 3. 배포 주소 (Deployment)
 * **Frontend:** [배포된 URL 입력]
 * **Backend API:** (http://13.60.25.65:8080)
@@ -52,11 +58,14 @@
 
 ---
 
+<div id="architecture"></div>
+
 ## 4. 시스템 구조 및 기술 스택 (Architecture & Tech Stack)
 
-### 4-1. 전체 시스템 아키텍처 (System Architecture)
-[전체구조도]<img width="1043" height="582" alt="architecture" src="https://github.com/user-attachments/assets/04883c36-d47e-412d-a543-93dc95d4992b" />
+<div id="system-arch"></div>
 
+### 4-1. 전체 시스템 아키텍처 (System Architecture)
+![architecture](https://github.com/user-attachments/assets/04883c36-d47e-412d-a543-93dc95d4992b)
 
 본 서비스는 **Chrome Extension**을 통해 데이터를 수집하고, **Web Dashboard**에서 데이터를 시각화 및 관리하는 구조로 동작합니다.
 
@@ -64,6 +73,8 @@
 * **Visualization:** 저장된 데이터는 Web Dashboard(HTML/CSS/JS)를 통해 카드 뉴스 형태의 UI로 제공되며, 리마인드 및 요약 기능을 제공합니다.
 
 <br>
+
+<div id="tech-stack"></div>
 
 ### 4-2. 기술 스택 (Tech Stack)
 
@@ -76,6 +87,8 @@
 | **Infra** | ![AWS EC2](https://img.shields.io/badge/AWS_EC2-FF9900?style=flat-square&logo=amazon-aws&logoColor=white) | • 클라우드 서버 호스팅<br>• Spring Boot 및 DB 서버 배포 환경 |
 
 ---
+
+<div id="environment"></div>
 
 ## 5. 실행 방법 및 환경 정보 (Environment)
 ### 🔹 Frontend 환경
