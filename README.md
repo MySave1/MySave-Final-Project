@@ -8,7 +8,7 @@
 4. [시스템 구조 및 기술 스택](#architecture)
    - [전체 시스템 아키텍처](#system-arch)
    - [기술 스택](#tech-stack)
-5. [실행 방법 및 환경 정보](#environment)
+5. [실행 방법](#environment)
 6. [화면 구성 및 UI 스크린샷](#screenshots)
 7. [현재 상황](#status)
 
@@ -94,16 +94,23 @@
 
 <div id="environment"></div>
 
-## 5. 실행 방법 및 환경 정보 (Environment)
-### 🔹 Frontend 환경
-* **Node Version:** v18.xx.x
-* **Framework:** React v18
-* **실행 방법:**
-  ```bash
-  git clone [https://github.com/MySave1/MySave_FE.git](https://github.com/MySave1/MySave_FE.git)
-  npm install
-  npm run dev
+## 5. 실행 방법
 
+### 5.1 로컬 실행(웹)
+이 프로젝트는 정적 파일 기반이므로 별도 빌드 과정이 없습니다.
+
+#### Live Server (권장)
+1) VS Code에서 프로젝트 폴더 열기  
+2) `index.html` 우클릭 → **Open with Live Server**
+
+### 5.2 크롬 확장 실행(압축 해제 로드)
+
+1. 크롬 브라우저 주소창에 `chrome://extensions` 입력
+2. 개발자 모드 활성화
+3. “압축해제된 확장 프로그램 로드” 클릭
+4. `extension/` 폴더 선택 선택하여 로드
+
+---
 
 
 <div id="screenshots"></div>
@@ -116,7 +123,7 @@
 - **경로:** `/images/screenshots/`
 
 
-
+---
 
 <div id="status"></div>
 
