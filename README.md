@@ -86,7 +86,9 @@
 | **Backend** | ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=spring-boot&logoColor=white) ![Java](https://img.shields.io/badge/Java-007396?style=flat-square&logo=java&logoColor=white) | • RESTful API 서버 구축<br>• 북마크(CRUD), 리마인드, 태그 기능 비즈니스 로직 처리<br>• Layered Architecture (Controller-Service-Repository) 적용 |
 | **Database** | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) | • 관계형 데이터베이스(RDBMS) 구축<br>• 사용자, 북마크, 태그 데이터 모델링 및 저장 |
 | **Extension** | ![Chrome](https://img.shields.io/badge/Chrome_Extension-4285F4?style=flat-square&logo=google-chrome&logoColor=white) | • 현재 탭의 정보(URL, Title) 스크래핑<br>• 백엔드 API로 데이터 전송 (POST 요청) |
-| **Infra** | ![AWS EC2](https://img.shields.io/badge/AWS_EC2-FF9900?style=flat-square&logo=amazon-aws&logoColor=white) | • 클라우드 서버 호스팅<br>• Spring Boot 및 DB 서버 배포 환경 |
+| **Infra (Frontend)** | ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white) | • 프론트엔드 정적 리소스 배포<br>• HTTPS 기반 서비스 제공 |
+| **Infra (Backend)** | ![AWS EC2](https://img.shields.io/badge/AWS_EC2-FF9900?style=flat-square&logo=amazon-aws&logoColor=white) | • 클라우드 서버 호스팅<br>• Spring Boot 및 DB 서버 배포 환경 |
+
 
 ---
 
