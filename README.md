@@ -26,8 +26,8 @@
 
 | 파트 | 저장소 링크 | 비고 |
 | :-- | :-- | :-- |
-| **Frontend** | [MySave_FE 바로가기](https://github.com/MySave1/MySave_FE) | React, Vite 기반 |
-| **Backend** | [MySave_BE 바로가기](https://github.com/MySave1/MySave_BE) | Node.js, Express 기반 |
+| **Frontend** | [MySave_FE 바로가기](https://github.com/MySave1/MySave_FE) | HTML, CSS, JS 기반 |
+| **Backend** | [MySave_BE 바로가기](https://github.com/MySave1/MySave_BE) | SPRING BOOT 기반 |
 
 ---
 
