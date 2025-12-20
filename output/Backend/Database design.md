@@ -1,6 +1,7 @@
 # 📂 데이터베이스 설계 명세서 (Database Schema)
 
-![image.png](attachment:ae75720d-7caa-43db-8f3c-7c8e3c5264c9:image.png)
+<img width="978" height="623" alt="image" src="https://github.com/user-attachments/assets/595254d0-9033-4338-a483-9720f569707f" />
+
 
 ## 1. ER Diagram (Entity-Relationship Diagram)
 
